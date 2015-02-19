@@ -1,0 +1,27 @@
+{
+  "name": "npm-hook",
+  "version": "0.0.1",
+  "description": "Webhook to perform an action on an npm-enabled repository",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "autotest": "node_modules/mocha/bin/mocha --watch"
+  },
+  "author": "Jose Raya <jose.raya@agilogy.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.11.2",
+    "nodegit": "^0.2.7",
+    "npm": "^2.5.1",
+    "q": "^1.1.2",
+    "shelljs": "^0.3.0"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "devDependencies": {
+    "chai": "^2.0.0",
+    "mocha": "^2.1.0",
+    "nodemon": "^1.3.7"
+  }
+}
